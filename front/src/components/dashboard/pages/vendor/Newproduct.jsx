@@ -22,7 +22,7 @@ const Newproduct = () => {
   
     return axios.post('https://api.imgbb.com/1/upload', formData, {
       params: {
-        key: 'bfb6f93ce9f50109818090214c3ce99c', // Replace with your actual ImgBB API key
+        key: process.env.IMAGE_API, // Replace with your actual ImgBB API key
       },
       headers: {
         'Content-Type': 'multipart/form-data',
